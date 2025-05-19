@@ -3,6 +3,8 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(145deg, #111, #1a1a1a);
   color: #fff;
+  background: url('https://images.unsplash.com/photo-1472712739516-7ad2b786e1f7?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+  background-size: cover;
 }
 
 .center {
@@ -72,4 +74,74 @@ footer {
 
 .logo img {
   height: 32px;
+}
+body {
+  transition: background 0.5s ease-in-out;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.bg-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  padding: 10px 15px;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.background-selector {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  background: rgba(0,0,0,0.9);
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+  z-index: 999;
+}
+
+.background-selector.hidden {
+  display: none;
+}
+
+.background-selector .column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.background-selector img {
+  width: 100px;
+  height: 60px;
+  object-fit: cover;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.background-selector img:hover {
+  transform: scale(1.05);
+}
+
+.color-option {
+  width: 100px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 2px solid #444;
 }
